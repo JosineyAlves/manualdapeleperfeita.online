@@ -18,7 +18,8 @@
     <style type="text/css">
       body {
         color: white;
-        background-color: rgba(8, 0, 45);
+        background-image: url("assets/img/bg.png");
+        background-color: rgba(0, 0, 0, 0.6);
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
@@ -26,89 +27,32 @@
       }
     </style>
 
-<script >
-    
-
-function u() {
-    const e = 212;
-    i(e), l(e)
-}
-
-function i(e) {
-    const t = document.querySelector(".hero__people-counter");
-    t.innerHTML = `
-        <strong>${e}</strong> pessoas est\xE3o assistindo a esse v\xEDdeo. Devido \xE0 alta demanda de acessos, garantimos a
-        apresenta\xE7\xE3o somente at\xE9 <strong>${d()}</strong>
-      `
-}
-
-function l(e) {
-    setInterval(() => {
-        if (e < 1053) {
-            e += 21, i(e);
-            return
-        }
-        if (e === 1074 || e === 1073 || e === 1069 || e === 1065 || e === 1061) {
-            e -= 4, i(e);
-            return
-        }
-        e === 1057 && (e = 1069, i(e))
-    }, 4e3)
-}
-
-function d() {
-    const e = new Date;
-    let t = e.getDate(),
-        o = Number(e.getMonth()) + 1;
-    const s = e.getFullYear();
-    return t < 10 && (t = `0${t}`), o < 10 && (o = `0${o}`), `${t}/${o}/${s}`
-}
-
-function f() {
-    
-}
-
-
-
-function h(e) {
-    const t = window.location.search.substring(1);
-    return `${e}?${t}`
-}
-window.addEventListener("load", () => {
-    f(), u()
-}); </script>
-    <style>
-      *,*:before,*:after{box-sizing:border-box;padding:0;margin:0}body{font-family:Montserrat,sans-serif}.hero__people-counter{font-size:1rem;text-align:center;padding:0 1rem;margin:2rem auto;font-weight:600;max-width:75ch;color:#fff}.hero__people-counter strong{color:#cf0200}
-    </style>
-
   </head>
   <body>
-    
-            <p class="hero__people-counter">
-            <strong>224</strong> pessoas estão assistindo a esse vídeo. Devido à
-            alta demanda de acessos, garantimos a apresentação somente até
-            <strong>hoje</strong>
     
     <header class="py-4">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
-            <!-- Imagem exclusivo -->
+            <!-- Imagem Ultrasecreto -->
             <img class="img-fluid" src="./assets/img/exclusivo.png" width="370" height="205">
 
             <!-- Headline -->
-            <h3 class="my-4"><b>Ritual Simples elimina todos os sintmas da dermatite em poucas semanas</b></h3>
+            <h3 class="my-4"><b>Simples Vitamina de 6 Ingredientes Derrete Muita Gordura</b></h3>
 
             <!-- VSL -->
             <script type="text/javascript" id="scr_625479c8f96a72000858ed33">var s=document.createElement("script");s.src="https://cdn.converteai.net/528ac277-8029-4ec6-a3db-8da993dd5d9a/players/625479c8f96a72000858ed33/player.js",s.async=!0,document.head.appendChild(s);</script>
-
+			
             <!-- Botão -->
             <div id="cta1" class="mt-4 d-none">
               <a href="https://pay.kiwify.com.br/lllFyPg" class="a-btn" style="text-decoration: none;">
                 <span class="span-btn">QUERO OBTER ACESSO!</span>
-                <span class="span-btn2">(atenção: vagas limitadas)</span>
+                <span class="span-btn2">(atenção: desconto hoje)</span>
               </a>
             </div>
+
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
 
             <!-- Termos de Uso e Política de Privacidade -->
             <div class="text-white mt-4"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>
