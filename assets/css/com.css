@@ -215,22 +215,68 @@ tr {
 }
 
 .a-btn {
-    .a-btn {
-  border-color: none;
-  background: #ffde00;
-  border: none;
-  color: white;
-  text-decoration: none;
-  display: flex;
-  justify-content:center;
-  font-size: 22px;
-  margin: auto;
-  margin-top: 15px;
-  height: 45px;
-  align-items:center;
-  width:60%;
-  padding: 15px;
-  border-radius: 6px;line-height: 1.5715;
-  position: relative;
-  font-weight: 700;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    color: #000000;
+    outline: 0;
+    line-height: 1;
+    text-align: center;
+    position: relative!important;
+    display: inline-block!important;
+    border-style: solid;
+    width: 100%;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    margin-bottom: 10px;
+    padding: 25px 44px;
+    border-color: none;
+    border-width: 0px;
+    border-radius: 15px;
+    background: #ffde00;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5);
+    text-decoration: none!important;
+}
+
+.span-btn {
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    margin: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding: 0 15px;
+    white-space: normal;
+    font-size: 25px;
+    color: #000000;
+    font-family: Oswald;
+    font-weight: bold;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+.span-btn2 {
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    display: block;
+    position: relative;
+    z-index: 1;
+    margin: .2em 0 -.5em;
+    font-size: 15px;
+    color: #000000;
+    font-family: Cabin;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: none;
 }
