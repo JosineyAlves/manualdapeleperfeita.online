@@ -453,7 +453,49 @@ src="https://www.facebook.com/tr?id=1426360007804124&ev=PageView&noscript=1"
                             </div>
                         </div>
                     </div>
-                   <script>if(!document.querySelector('script[src^="https://player.pandavideo.com.br/api.v2.js"]')){let s=document.createElement('script'); s.src='https://player.pandavideo.com.br/api.v2.js'; s.async=true; document.head.appendChild(s);}window.pandascripttag=window.pandascripttag || [];window.pandascripttag.push(function (){const p=new PandaPlayer('panda-4b6e3449-2e11-4cde-96af-7d5949b972c4',{onReady(){p.loadButtonInTime({fetchApi: true})}});})</script><div id="f9f00d1c-5d89-4cc6-a5cd-71bec9c92568"></div>
+                    <style> 
+    .panda {
+        display: none
+    }
+</style>
+<script>
+    const SECONDS_TO_DISPLAY = 3;
+    const CLASS_TO_DISPLAY = 'panda';
+    const IFRAME_ID = 'INSERIR_ID'
+    const API_ENDPOINT = 'https://player.pandavideo.com.br/api.v2.js'
+
+    if(!document.querySelector(`script[src='${API_ENDPOINT}']`)) { 
+        let s = document.createElement('script'); 
+        s.src = API_ENDPOINT; 
+        s.async = true; 
+        document.head.appendChild(s);
+    }
+
+    window.pandascripttag = window.pandascripttag || [];
+    window.pandascripttag.push(function () {
+        const p = new PandaPlayer(IFRAME_ID , {
+            onReady() {
+                const el = document.querySelectorAll(`.${CLASS_TO_DISPLAY}`);
+                p.onEvent(e => {
+                const type = e.message
+                if(type === 'panda_timeupdate'){
+                    const { currentTime, isMutedIndicator } = e;
+                    if (isMutedIndicator) return;
+                    if (currentTime < SECONDS_TO_DISPLAY) {
+                        el.forEach(e => {
+                            e.style.display = 'none'
+                        })
+                    } else if (currentTime > SECONDS_TO_DISPLAY) {
+                        el.forEach(e => {
+                            e.style.display = 'block'
+                        })
+                    }
+                }
+                })
+            }
+        });
+    })
+</script>
                     </div>
                 </div>
             </div>
